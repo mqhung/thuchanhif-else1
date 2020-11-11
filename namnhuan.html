@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap Year</title>
+</head>
+<body>
+<h2>Kiểm tra năm nhuận</h2>
+<label for="years"></label>
+<input type="text" id="years" style="width: 100px">
+<input type="button" value="Check" onclick="leapYear();"> <br>
+<p id="result"></p>
+</body>
+<script>
+    function leapYear() {
+        let year = +years.value;
+        if (year % 4 === 0) {
+            if (year % 100 === 0) {
+                if (year % 400 === 0) {
+                    result.innerHTML = 'Năm ' + (+year) + ' là năm nhuận';
+                } else {
+                    result.innerHTML = 'Năm ' + (+year) + ' không là năm nhuận';
+                }
+            } else {
+                result.innerHTML = 'Năm ' + (+year) + ' là năm nhuận';
+            }
+        } else {
+            result.innerHTML = 'Năm ' + (+year) + ' không là năm nhuận';
+        }
+    }
+</script>
+</html>

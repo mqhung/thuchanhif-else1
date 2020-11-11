@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Login</title>
+</head>
+<body>
+Username<input type="text" id="username" style="margin-left: 47px;">
+<br>
+<br>
+Password<input type="password" id="password" style="margin-left: 50px;">
+<br>
+<br>
+<input type="button" id="login" onclick="Login()" value="Login" style="margin-left: 40px;">
+<p id="result"></p>
+</body>
+<script>
+
+    function Login() {
+        let user = username.value;
+        let pass = password.value;
+        if (user === "mqhung") {
+            if (pass === "hung") {
+                result.innerHTML = "Login Successful";
+            } else {
+                result.innerHTML = "Login Failed";
+            }
+        } else {
+            result.innerHTML = "Try again";
+        }
+    }
+</script>
+</html>

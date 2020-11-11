@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case</title>
+</head>
+<body>
+<input type="number" id="number">
+<input type="button" value="Display" onclick="display();">
+<p id="result"></p>
+</body>
+<script>
+    function display() {
+        let num = number.value;
+        switch (num) {
+            case '0':
+                result.innerHTML = "Number zero";
+                break;
+            case '1':
+                result.innerHTML = "Number one";
+                break;
+            case '2':
+                result.innerHTML = "Number two";
+                break;
+            case '3':
+                result.innerHTML = "Number three";
+                break;
+            case '4':
+                result.innerHTML = "Number four";
+                break;
+            case '5':
+                result.innerHTML = "Number five";
+                break;
+            case '6':
+                result.innerHTML = "Number six";
+                break;
+            case '7':
+                result.innerHTML = "Number seven";
+                break;
+            case '8':
+                result.innerHTML = "Number eight";
+                break;
+            case '9':
+                result.innerHTML = "Number nine";
+                break;
+            case '10':
+                result.innerHTML = "Number ten";
+                break;
+            default:
+                result.innerHTML = "Error";
+                break;
+        }
+    }
+</script>
+</html>

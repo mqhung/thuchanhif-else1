@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toán tử 3 ngôi</title>
+</head>
+<body>
+<h4>Bài 1</h4>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<br>
+<br>
+<input type="button" onclick="Display();" value="Display">
+<p id="result"></p>
+<br>
+<br>
+<h4>Bài 2</h4>
+<input type="text" id="login">
+<br>
+<br>
+<input type="button" onclick="Display1();" value="Display">
+<p id="result1"></p>
+</body>
+<script>
+    function Display() {
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        document.getElementById("result").innerHTML = ((a + b) <= 4) ? "Below" : "Over";
+    }
+
+    function Display1() {
+        let mess = document.getElementById("login").value;
+        document.getElementById("result1").innerHTML = (mess === "Employee") ? "Hello" : (mess === "Director") ? "Greetings" : (mess === "") ? "Not login" :"Try Again";
+    };
+</script>
+</html>
